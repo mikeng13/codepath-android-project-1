@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:cropToPadding="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivCommentUserProfile"/>
+    <RelativeLayout
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ivCommentUserProfile"
+        android:layout_toRightOf="@id/ivCommentUserProfile"
+        android:layout_marginBottom="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="comment"
+            android:id="@+id/tvCommentText"/>
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCommentText"
+            android:layout_alignLeft="@id/tvCommentText"
+            android:id="@+id/tvCommentTimeStamp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
